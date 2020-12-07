@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/CNN2.jpg" alt="Sample"  width="800" height="1600">
+    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/CNN2." alt="Sample"  width="800" height="1600">
     <p align="center">
         <b> CNN (卷積類神經網路) 流程圖 [參考:林大貴/博碩書局]</b>
     </p>
