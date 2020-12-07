@@ -14,7 +14,7 @@ GAN通常出現的許多問題之一是generator卡在生成的影象上，看�
 和生成器（generator）上使用dropout。
 
 '''
-'''
+'''python
 
 import keras
 from keras import layers
