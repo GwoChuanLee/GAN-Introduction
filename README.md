@@ -62,11 +62,9 @@
 
 # 3. 其他文章
 
-## (1) 一文看懂生成式对抗网络GANs：
-### 參考: https://36kr.com/p/1721743589377
+## (1) 一文看懂生成式对抗网络GANs： https://36kr.com/p/1721743589377
 
-## (2) 不到 200 行代码，教你如何用 Keras 搭建生成对抗网络（GAN）
-### 參考: https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
+## (2) 不到 200 行代码，教你如何用 Keras 搭建生成对抗网络（GAN）: https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
 
 
 # 4. 參考網站
@@ -76,8 +74,6 @@
 ### (4) Github (seeprettyface.com) https://github.com/a312863063
 ### (5) 人臉downloads : https://drive.google.com/drive/folders/1tZUcXDBeOibC6jcMCtgRRz67pzrAHeHL
 
-
-### (4) 
 
 
 
