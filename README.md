@@ -49,7 +49,7 @@
 
 #### 資料參考:  https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
 
-### DCGAN 判别器的作用是判断一個模型生成的圖像和真實圖像比，有多逼真。它的基本结構就是如下圖所示的卷積神經網路（Convolutional Neural Network，CNN）。對於 MNIST 數據集來說，模型輸入是一個 28x28 像素的單通道圖像。Sigmoid 函數的輸出值在 0-1 之間，表示图像真實度的機率，其中 0 表示肯定是假的，1 表示肯定是真的。與典型的 CNN 結構相比，這里去掉了層之間的 max-pooling，而是採用了步進卷積來進行下採樣。這裡每個 CNN 層都以 LeakyReLU 為激活函數。而且為了防止過擬合和記憶效應，層之間的 dropout 值均被設置在 0.4-0.7 之間。
+### DCGAN 生成器的作用是合成假的圖像，其基本結構如下圖。圖中，使用了卷積的倒數，即轉置卷積（transposed convolution），從 100 維的躁聲（滿足 -1 至 1 之間的均匀分布）中生成了假圖像。如在 DCGAN 模型中提到的那樣，去掉微步進卷積，這裡採用模型前三層之間的上採樣来合成更逼真的手寫圖像。在層與層之間，我們採用了批量正規化的方法來平穩化訓練過程。以 ReLU 函數為每層結構之後的激活函數。最後一層 Sigmoid 函數輸出最後的假圖像。第一層設置了 0.3-0.5 之間的 dropout 值來防止過擬合。
 
 <p align="center">
     <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/DCGAN-G-Net.jpg" alt="Sample"  width="800" height="300">
@@ -58,7 +58,8 @@
     </p>
 </p>
 
-### DCGAN 生成器的作用是合成假的图像，其基本机构如下图所示。图中，我们使用了卷积的倒数，即转置卷积（transposed convolution），从 100 维的噪声（满足 -1 至 1 之间的均匀分布）中生成了假图像。如在 DCGAN 模型中提到的那样，去掉微步进卷积，这里我们采用了模型前三层之间的上采样来合成更逼真的手写图像。在层与层之间，我们采用了批量归一化的方法来平稳化训练过程。以 ReLU 函数为每一层结构之后的激活函数。最后一层 Sigmoid 函数输出最后的假图像。第一层设置了 0.3-0.5 之间的 dropout 值来防止过拟合。
+### DCGAN 判别器的作用是判断一個模型生成的圖像和真實圖像比，有多逼真。它的基本結構就是如下圖所示的卷積神經網路（Convolutional Neural Network，CNN）。對於 MNIST 數據集來說，模型輸入是一個 28x28 像素的單通道圖像。Sigmoid 函數的輸出值在 0-1 之間，表示图像真實度的機率，其中 0 表示肯定是假的，1 表示肯定是真的。與典型的 CNN 結構相比，這里去掉了層之間的 max-pooling，而是採用了步進卷積來進行下採樣。這裡每個 CNN 層都以 LeakyReLU 為激活函數。而且為了防止過擬合和記憶效應，層之間的 dropout 值均被設置在 0.4-0.7 之間。
+
 <p align="center">
     <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/DCGAN-D-Net.jpg" alt="Sample"  width="800" height="300">
     <p align="center">
