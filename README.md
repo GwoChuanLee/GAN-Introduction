@@ -48,10 +48,10 @@
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/DCGAN_Cifar10.py">DCGAN_Cifar10.py </a> <br>
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/DCGAN_Mnist.py">DCGAN_Mnist.py </a>
 
-## (3)【Keras-MLP-GAN】MNIST: https://blog.csdn.net/bryant_meng/article/details/81024890
+## (2)【Keras-MLP-GAN】MNIST: https://blog.csdn.net/bryant_meng/article/details/81024890
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/Keras-MLP-GAN-MNIST.py">Keras-MLP-GAN-MNIST.py </a>
 
-## (4) 使用 Keras 搭建一個 GAN 魔法陣（模型）: https://ithelp.ithome.com.tw/articles/10208478
+## (3) 使用 Keras 搭建一個 GAN 魔法陣（模型）: https://ithelp.ithome.com.tw/articles/10208478
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/playGAN_mnist.py">playGAN_mnist.py</a>
 
 # 3. 其他文章
