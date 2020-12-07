@@ -44,14 +44,14 @@
 ## DCGAN (Deep Convolution GAN):
 
 <p align="center">
-    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/DCGAN-G-Net.jpg" alt="Sample"  width="300" height="200">
+    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/DCGAN-G-Net.jpg" alt="Sample"  width="800" height="400">
     <p align="center">
         <b>DCGAN Generator Network</b>
     </p>
 </p>
 
 <p align="center">
-    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/DCGAN-D-Net.jpg" alt="Sample"  width="300" height="200">
+    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/DCGAN-D-Net.jpg" alt="Sample"  width="800" height="400">
     <p align="center">
         <b>DCGAN Discriminator Network</b>
     </p>
