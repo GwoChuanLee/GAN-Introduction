@@ -41,6 +41,22 @@
     </p>
 </p>
 
+## DCGAN (Deep Convolution GAN):
+
+<p align="center">
+    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/DCGAN-G-Net.png" alt="Sample"  width="400" height="300">
+    <p align="center">
+        <b>DCGAN Generator Network</b>
+    </p>
+</p>
+
+<p align="center">
+    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/DCGAN-D-Net.png" alt="Sample"  width="400" height="300">
+    <p align="center">
+        <b>DCGAN Discriminator Network</b>
+    </p>
+</p>
+
 # 範例(一) : 【Keras-MLP-GAN】MNIST: 以MLP方式建立GAN
 ### 參考文章 https://blog.csdn.net/bryant_meng/article/details/81024890
 ### 本範例僅採用多層類神經網路(MultiLayer Neural Networks)來建構GAN
