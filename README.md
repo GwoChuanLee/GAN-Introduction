@@ -66,11 +66,18 @@
 ### 參考: https://36kr.com/p/1721743589377
 
 ## (2) 不到 200 行代码，教你如何用 Keras 搭建生成对抗网络（GAN）
-### https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
+### 參考: https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
 
 
 # 4. 參考網站
+### (1) 李宏毅-HackMD: https://hackmd.io/@overkill8927/SyyCBk3Mr?type=view
+### (2) 李宏毅(NTU-courses): http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS17.html
+### (3) G-Lab (seeprettyface) : https://seeprettyface.com/
+### (4) Github (seeprettyface.com) https://github.com/a312863063
+### (5) 人臉downloads : https://drive.google.com/drive/folders/1tZUcXDBeOibC6jcMCtgRRz67pzrAHeHL
 
+
+### (4) 
 
 
 
