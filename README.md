@@ -44,21 +44,21 @@
 
 # 2. 其他範例:
 
-## (1)【Keras-DCGAN】MNIST / CIFAR-10:  https://blog.csdn.net/bryant_meng/article/details/81210656
+### (1)【Keras-DCGAN】MNIST / CIFAR-10:  https://blog.csdn.net/bryant_meng/article/details/81210656
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/DCGAN_Cifar10.py">DCGAN_Cifar10.py </a> <br>
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/DCGAN_Mnist.py">DCGAN_Mnist.py </a>
 
-## (2)【Keras-MLP-GAN】MNIST: https://blog.csdn.net/bryant_meng/article/details/81024890
+### (2)【Keras-MLP-GAN】MNIST: https://blog.csdn.net/bryant_meng/article/details/81024890
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/Keras-MLP-GAN-MNIST.py">Keras-MLP-GAN-MNIST.py </a>
 
-## (3) 使用 Keras 搭建一個 GAN 魔法陣（模型）: https://ithelp.ithome.com.tw/articles/10208478
+### (3) 使用 Keras 搭建一個 GAN 魔法陣（模型）: https://ithelp.ithome.com.tw/articles/10208478
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/playGAN_mnist.py">playGAN_mnist.py</a>
 
 # 3. 其他文章
 
-## (1) 一文看懂生成式对抗网络GANs： https://36kr.com/p/1721743589377
+### (1) 一文看懂生成式对抗网络GANs： https://36kr.com/p/1721743589377
 
-## (2) 不到 200 行代码，教你如何用 Keras 搭建生成对抗网络（GAN）: https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
+### (2) 不到 200 行代码，教你如何用 Keras 搭建生成对抗网络（GAN）: https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
 
 
 # 4. 參考網站
