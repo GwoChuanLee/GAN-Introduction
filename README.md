@@ -28,7 +28,8 @@
 ### 參考文章 https://www.itread01.com/content/1543548422.html
 
 
-## 如何在Keras中以最小的形式實現GAN。具體實現是一個深度卷積GAN，或DCGAN (Deep Convolution GAN)
+## 如何在Keras中以最小的形式實現GAN。
+## 具體實現一個深度卷積GAN，或DCGAN (Deep Convolution GAN)
 #### 一個GAN，其中generator和discriminator是深度卷積網路，它利用`Conv2DTranspose`層對generator中的影象上取樣。
 #### 然後將在CIFAR10的影象上訓練GAN，CIFAR10資料集由屬於10個類別（每個類別5,000個影象）的50,000個32x32 RGB影象構成。為了節約時間，本文將只使用“frog”類的影象。
 
