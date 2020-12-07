@@ -44,6 +44,9 @@
 </p>
 
 ## 深度卷積生成對抗網路 DCGAN (Deep Convolution GAN):
+
+### DCGANs的基本架構就是使用幾層“反摺積”（Deconvolution）網路。“反摺積”類似於一種反向卷積，這跟用反向傳播演算法訓練監督的卷積神經網路（CNN）是類似的操作。
+
 #### 資料參考:  https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
 
 ### DCGAN 判别器的作用是判断一个模型生成的图像和真实图像比，有多逼真。它的基本结构就是如下图所示的卷积神经网络（Convolutional Neural Network，CNN）。对于 MNIST 数据集来说，模型输入是一个 28x28 像素的单通道图像。Sigmoid 函数的输出值在 0-1 之间，表示图像真实度的概率，其中 0 表示肯定是假的，1 表示肯定是真的。与典型的 CNN 结构相比，这里去掉了层之间的 max-pooling，而是采用了步进卷积来进行下采样。这里每个 CNN 层都以 LeakyReLU 为激活函数。而且为了防止过拟合和记忆效应，层之间的 dropout 值均被设置在 0.4-0.7 之间。
