@@ -42,7 +42,7 @@
 
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/keras_gan_cifar10.py">keras_gan_cifar10.py </a>
 
-# 其他範例:
+# 2. 其他範例:
 
 ## 【Keras-DCGAN】MNIST / CIFAR-10
 ### 參考:  https://blog.csdn.net/bryant_meng/article/details/81210656
@@ -52,12 +52,24 @@
 ### 參考:  https://blog.csdn.net/bryant_meng/article/details/81210656
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/DCGAN_Mnist.py">DCGAN_Mnist.py </a>
 
+## 【Keras-MLP-GAN】MNIST
 ### 參考:  https://blog.csdn.net/bryant_meng/article/details/81024890
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/Keras_MLP-GAN-MNIST.py">Keras-MLP-GAN-MNIST.py </a>
 
 ## 使用 Keras 搭建一個 GAN 魔法陣（模型）
 ### 參考:   https://ithelp.ithome.com.tw/articles/10208478
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/playGAN_mnist.py">playGAN_mnist.py</a>
+
+# 3. 其他文章
+
+## 一文看懂生成式对抗网络GANs：
+### 參考: https://36kr.com/p/1721743589377
+
+## 不到 200 行代码，教你如何用 Keras 搭建生成对抗网络（GAN）
+### https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
+
+
+# 4. 參考網站
 
 
 
