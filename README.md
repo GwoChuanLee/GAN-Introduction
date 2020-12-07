@@ -11,3 +11,6 @@
 ### GAN通常出現的許多問題之一是generator卡在生成的影象上，看起來像噪聲。一種可能的解決方案是在鑑別器（discriminator）
 ### 和生成器（generator）上使用dropout。
 
+
+<a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/keras_gan_cifar10.py">keras_gan_cifar10.py </a>
+   
