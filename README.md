@@ -49,7 +49,7 @@
 
 #### 資料參考:  https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
 
-### DCGAN 判别器的作用是判断一个模型生成的图像和真实图像比，有多逼真。它的基本结构就是如下图所示的卷积神经网络（Convolutional Neural Network，CNN）。对于 MNIST 数据集来说，模型输入是一个 28x28 像素的单通道图像。Sigmoid 函数的输出值在 0-1 之间，表示图像真实度的概率，其中 0 表示肯定是假的，1 表示肯定是真的。与典型的 CNN 结构相比，这里去掉了层之间的 max-pooling，而是采用了步进卷积来进行下采样。这里每个 CNN 层都以 LeakyReLU 为激活函数。而且为了防止过拟合和记忆效应，层之间的 dropout 值均被设置在 0.4-0.7 之间。
+### DCGAN 判别器的作用是判断一個模型生成的圖像和真實圖像比，有多逼真。它的基本结構就是如下圖所示的卷積神經網路（Convolutional Neural Network，CNN）。對於 MNIST 數據集來說，模型輸入是一個 28x28 像素的單通道圖像。Sigmoid 函數的輸出值在 0-1 之間，表示图像真實度的機率，其中 0 表示肯定是假的，1 表示肯定是真的。與典型的 CNN 結構相比，這里去掉了層之間的 max-pooling，而是採用了步進卷積來進行下採樣。這裡每個 CNN 層都以 LeakyReLU 為激活函數。而且為了防止過擬合和記憶效應，層之間的 dropout 值均被設置在 0.4-0.7 之間。
 
 <p align="center">
     <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/DCGAN-G-Net.jpg" alt="Sample"  width="800" height="300">
