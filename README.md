@@ -25,7 +25,7 @@
 
 
 # 範例(一) : keras 實現 GAN（生成對抗網路）
-### Ref: https://www.itread01.com/content/1543548422.html
+### 參考文章 https://www.itread01.com/content/1543548422.html
 
 
 ## 如何在Keras中以最小的形式實現GAN。具體實現是一個深度卷積GAN，或DCGAN (Deep Convolution GAN)
