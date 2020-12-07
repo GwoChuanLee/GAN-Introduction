@@ -41,7 +41,8 @@
     </p>
 </p>
 
-## DCGAN (Deep Convolution GAN):
+## 深度卷積生成對抗網路 DCGAN (Deep Convolution GAN):
+#### 參考:  https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
 
 <p align="center">
     <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/DCGAN-G-Net.jpg" alt="Sample"  width="800" height="300">
@@ -97,7 +98,7 @@
 
 ### (1) 一文看懂生成式对抗网络GANs： https://36kr.com/p/1721743589377
 
-### (2) 不到 200 行代码，教你如何用 Keras 搭建生成对抗网络（GAN）: https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
+### (2) 不到 200 行代码，教你如何用 Keras 搭建生成对抗网络（GAN）:  https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
 
 
 # 4. 參考網站
