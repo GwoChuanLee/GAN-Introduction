@@ -53,6 +53,7 @@
     </p>
 </p>
 
+#### 生成器的作用是合成假的图像，其基本机构如下图所示。图中，我们使用了卷积的倒数，即转置卷积（transposed convolution），从 100 维的噪声（满足 -1 至 1 之间的均匀分布）中生成了假图像。如在 DCGAN 模型中提到的那样，去掉微步进卷积，这里我们采用了模型前三层之间的上采样来合成更逼真的手写图像。在层与层之间，我们采用了批量归一化的方法来平稳化训练过程。以 ReLU 函数为每一层结构之后的激活函数。最后一层 Sigmoid 函数输出最后的假图像。第一层设置了 0.3-0.5 之间的 dropout 值来防止过拟合。具体代码如下。
 <p align="center">
     <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/DCGAN-D-Net.jpg" alt="Sample"  width="800" height="300">
     <p align="center">
