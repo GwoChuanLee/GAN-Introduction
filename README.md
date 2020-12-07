@@ -80,13 +80,12 @@
 ### 一個GAN，其中 generator 和 discriminator 都是深度卷積網路，它利用`Conv2DTranspose`層對 generator 中的影象上取樣。
 ### 然後將在CIFAR10的影象上訓練 GAN，CIFAR10 資料集由屬於10個類別（每個類別5,000個影象）的50,000個32x32 RGB影象構成。為了節約時間，本文只使用“frog”類的影象。
 
-
 ### 原理上，GAN的組成如下所示：
-### *`generator`網路將shape`（latent_dim，）`的向量對映到shape`（32,32,3）`的影象。
-### *“discriminator”網路將形狀（32,32,3）的影象對映到估計影象是真實的概率的二進位制分數。
-###  *`gan`網路將generator和discriminator連結在一起：`gan（x）=discriminator（generator（x））`。因此，這個“gan”網路將潛在空間向量對映到discriminator對由generator解碼的這些潛在向量的### 真實性的評估。
-### *使用真實和虛假影象以及“真實”/“假”標籤來訓練鑑別器，因此需要訓練任何常規影象分類模型。
-### *為了訓練generator，我們使用generator權重的梯度來減少“gan”模型的損失。這意味著，在每個step中，將generator的權重移動到使得discriminator更可能被分類為由generator解碼的影象“真實”的方向### 上。即訓練generator來欺騙discriminator。
+### *generator網路將shape（latent_dim，）的向量對映到shape（32,32,3）的影象。
+### *discriminator網路將形狀（32,32,3）的影象對映到估計影象是真實的概率的二進位制分數。
+### *gan網路將generator和discriminator連結在一起：`gan（x）=discriminator（generator（x））`。因此，這個 gan 網路將潛在空間向量對映到discriminator對由generator解碼的這些潛在向量的真實性的評估。
+### *使用真實和虛假影象以及真實(1)/假(0)標籤來訓練鑑別器，因此需要訓練任何常規影象分類模型。
+### *為了訓練generator，我們使用generator權重的梯度來減少gan模型的損失。這意味著，在每個step中，將generator的權重移動到使得discriminator更可能被分類為由generator解碼的影象真實的方向上。即訓練generator來欺騙discriminator。
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/keras_gan_cifar10.py">keras_gan_cifar10.py </a>
 
 # 2. 其他範例:
