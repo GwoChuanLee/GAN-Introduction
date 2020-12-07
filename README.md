@@ -2,6 +2,10 @@
 ## 講題: 生成對抗網路之專題實作開發 [2020/12/11]
 
 
+# Deep Learning 背景知識 : 
+### Keras深度學習(Deep Learning)卷積神經網路(CNN)辨識Cifar-10影像
+### http://tensorflowkeras.blogspot.com/2017/10/kerasdeep-learningcnncifar-10.html
+
 # GAN-Introduction
 
 ### 生成對抗網路（Generative Adversarial Networks，GAN）最早由 Ian Goodfellow 在 2014 年提出，是目前深度學習領域最具潛力的研究成果之一。它的核心思想是：同時訓練兩個相互協助、同時又相互競爭的深度神經網路（一個稱為生成器 Generator，另一個稱為判别器 Discriminator）來處理非監督式學習的相關問題。在訓練過程中，兩個網路最終都要學習如何處理任務。
