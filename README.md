@@ -44,11 +44,11 @@
 
 # 其他範例:
 
-
+## Keras-DCGAN】MNIST / CIFAR-10
 ### 參考:  https://blog.csdn.net/bryant_meng/article/details/81210656
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/DCGAN_Cifar10.py">DCGAN_Cifar10.py </a>
 
-
+## 【Keras-DCGAN】MNIST / CIFAR-10
 ### 參考:  https://blog.csdn.net/bryant_meng/article/details/81210656
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/DCGAN_Mnist.py">DCGAN_Mnist.py </a>
 
