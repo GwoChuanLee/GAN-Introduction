@@ -16,6 +16,13 @@
 ### 一旦工匠的工藝成熟到偵探分辨不出來誰真誰假，就可以說我們訓練出了一個能夠模擬真正data分布的model。
 
 
+<p align="center">
+    <img src="https://github.com/GwoChuanLee/AI-IoT/blob/master/GAN1.png" alt="Sample"  width="1000" height="800">
+    <p align="center">
+        <b>GAN 結構</b>
+    </p>
+</p>
+
 
 # 範例(一) : keras 實現 GAN（生成對抗網路）
 ### Ref: https://www.itread01.com/content/1543548422.html
