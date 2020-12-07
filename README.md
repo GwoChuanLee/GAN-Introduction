@@ -28,7 +28,11 @@
 </p>
 
 
-# 範例(一) : keras 實現 GAN（生成對抗網路）
+# 範例(一) : 【Keras-MLP-GAN】MNIST: 以MLP方式建立GAN
+### 參考文章 https://blog.csdn.net/bryant_meng/article/details/81024890
+<a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/Keras-MLP-GAN-MNIST.py">Keras-MLP-GAN-MNIST.py </a>
+
+# 範例(二) : keras 實現 GAN（生成對抗網路）
 ### 參考文章 https://www.itread01.com/content/1543548422.html
 
 
