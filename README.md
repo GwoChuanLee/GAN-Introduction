@@ -3,7 +3,7 @@
 
 
 # Deep Learning 背景知識 : 
-### Keras深度學習(Deep Learning)卷積神經網路(CNN)辨識Cifar-10影像
+### Keras深度學習(Deep Learning)卷積神經網路(CNN)辨識Cifar-10影像 [林大貴, 博碩書局]
 ### http://tensorflowkeras.blogspot.com/2017/10/kerasdeep-learningcnncifar-10.html
 
 # GAN-Introduction
