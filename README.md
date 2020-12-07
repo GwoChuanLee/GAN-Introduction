@@ -17,7 +17,7 @@
 
 
 <p align="center">
-    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/GAN1.png" alt="Sample"  width="1000" height="800">
+    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/GAN1.png" alt="Sample"  width="500" height="350">
     <p align="center">
         <b>GAN 結構</b>
     </p>
