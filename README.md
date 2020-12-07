@@ -7,7 +7,7 @@
 ### http://tensorflowkeras.blogspot.com/2017/10/kerasdeep-learningcnncifar-10.html
 
 <p align="center">
-    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/CNN1.png" alt="Sample"  width="600" height="400">
+    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/CNN1.png" alt="Sample"  width="1000" height="500">
     <p align="center">
         <b> CNN (卷積類神經網路) 示意圖 </b>
     </p>
