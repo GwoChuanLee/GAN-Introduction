@@ -41,4 +41,26 @@
 #### *為了訓練generator，我們使用generator權重的梯度來減少“gan”模型的損失。這意味著，在每個step中，將generator的權重移動到使得discriminator更可能被分類為由generator解碼的影象“真實”的方向#### 上。即訓練generator來欺騙discriminator。
 
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/keras_gan_cifar10.py">keras_gan_cifar10.py </a>
+
+# 其他範例:
+
+
+### 參考:  https://blog.csdn.net/bryant_meng/article/details/81210656
+<a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/DCGAN_Cifar10.py">DCGAN_Cifar10.py </a>
+
+
+### 參考:  https://blog.csdn.net/bryant_meng/article/details/81210656
+<a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/DCGAN_Mnist.py">DCGAN_Mnist.py </a>
+
+### 參考:  https://blog.csdn.net/bryant_meng/article/details/81024890
+<a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/Keras_MLP-GAN-MNIST.py">Keras_MLP-GAN-MNIST.py </a>
+ 
+### 參考:   https://ithelp.ithome.com.tw/articles/10208478
+<a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/playGAN_mnist.py">playGAN_mnist.py</a>
+
+
+
+
+
+
    
