@@ -87,7 +87,6 @@
 ###  *`gan`網路將generator和discriminator連結在一起：`gan（x）=discriminator（generator（x））`。因此，這個“gan”網路將潛在空間向量對映到discriminator對由generator解碼的這些潛在向量的### 真實性的評估。
 ### *使用真實和虛假影象以及“真實”/“假”標籤來訓練鑑別器，因此需要訓練任何常規影象分類模型。
 ### *為了訓練generator，我們使用generator權重的梯度來減少“gan”模型的損失。這意味著，在每個step中，將generator的權重移動到使得discriminator更可能被分類為由generator解碼的影象“真實”的方向### 上。即訓練generator來欺騙discriminator。
-
 <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/keras_gan_cifar10.py">keras_gan_cifar10.py </a>
 
 # 2. 其他範例:
