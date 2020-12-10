@@ -28,9 +28,28 @@ import numpy as np
 # generator 输入噪声（100），可以产生图片（28，28，1），这里用 MLP 的形式，
 # 也即都是 fully connection！
 #
-# 100→256→1024→784→reshape 成 （28,28,1）
+# 100→256→512→1024→784→reshape 成 （28,28,1）
 #
 # build_generator
+
+# -----------------------------------------------------------------------------------
+# ReLu=max(0,x), LeakyReLu=max(alpa*x,x), LeakyReLu 避免 Dead ReLu 問題
+# -----------------------------------------------------------------------------------
+# 當一個 Deep Network 非常深的時候，狀況也是一樣的，當我們後面的 Layer 根據前面
+# 的結果做出調整，但是前面的 Layer 也根據更前面的結果更動了，大家都動的情況下，
+# 造成結果還是壞掉了
+
+# 為了解決這個問題，過去傳統的方法就是 Learning  Rate 設小一點,  Learning Rate 設小一點的缺點就是慢
+
+# Normalization 的好處：把每一個  Layer 的 feature 都做 Normalization 後，
+# 對於每一個 Layer 而言，確保 output 的 Statistic 是固定的
+
+# 但是麻煩的地方在於，我們不太容易讓他的 Statistic 固定，
+# 因為在整個 training 的過程中，Network 的參數是不斷在變化的，
+# 所以每一個 Hidden Layer 的 mean 跟 variance 是不斷在變化的，
+# 所以我們需要一個新的技術，這個技術就叫做 “Batch Normalization” 
+# ------------------------------------------------------------------------------------
+
 model = Sequential()
 
 model.add(Dense(256, input_dim=100))
@@ -45,8 +64,8 @@ model.add(Dense(1024))
 model.add(LeakyReLU(alpha=0.2))
 model.add(BatchNormalization(momentum=0.8))
           
-model.add(Dense(np.prod((28,28,1)), activation='tanh'))
-model.add(Reshape((28,28,1)))
+model.add(Dense(np.prod((28,28,1)), activation='tanh')) # 即 Dense(784)
+model.add(Reshape((28,28,1))) # 圖形大小 28x28 , 1 表單色
 
 model.summary()
 
@@ -65,7 +84,7 @@ generator = Model(noise, img) # input:noise , output: img
 # build_discriminator
 model = Sequential()
 
-model.add(Flatten(input_shape=(28,28,1)))
+model.add(Flatten(input_shape=(28,28,1))) # 將輸入 28x28x1 維度資料變成 1維 784 的資料輸入 
 
 model.add(Dense(512))
 model.add(LeakyReLU(alpha=0.2))
@@ -79,7 +98,7 @@ model.summary()
 img = Input(shape=(28,28,1)) # 输入 （28，28，1）
 validity = model(img) # 输出二分类结果
 
-discriminator = Model(img, validity)
+discriminator = Model(img, validity) # input: img, output: 0 或 1 
 
 #
 # 2.4 compile 模型，对学习过程进行配置
