@@ -23,7 +23,7 @@
 </p>
 
 ### CNN 卷積類神經網路範例 [參考:林大貴/博碩書局]
-#### 程式範例: <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/Keras-Cifar-CNN-Deeper-Conv3.py">Keras-Cifar-CNN-Deeper-Conv3.py </a>
+#### 程式範例: <a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/Keras_Cifar_CNN_Deeper_Conv3.py">Keras_Cifar_CNN_Deeper_Conv3.py </a>
 
 
 # GAN-Introduction
