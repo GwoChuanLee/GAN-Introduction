@@ -35,7 +35,7 @@
 ## GAN的運作模式:
 ### 有兩個需要被訓練的model，
 ### 一個是鑑別器網路 (Discriminator network): 偵探則是要分辨現在給他的data是真的還是假的
-### 一個是生成器網路 (Generator network):工匠要做的事就是偽造出假的data，現在手上有真的data，並且會給出一個回饋。工匠根據這個回饋來「訓練」他現在的工藝，也就是調整model的parameter
+### 一個是生 網路 (Generator network):工匠要做的事就是偽造出假的data，現在手上有真的data，並且會給出一個回饋。工匠根據這個回饋來「訓練」他現在的工藝，也就是調整model的parameter
 ### 一旦工匠的工藝成熟到偵探分辨不出來誰真誰假，就可以說我們訓練出了一個能夠模擬真正data分布的model。
 
 <p align="center">
@@ -69,7 +69,7 @@
     </p>
 </p>
 
-# 激活函數 (Activation function)
+# [註] 激活函數 (Activation function)
 ### 參考: https://zhuanlan.zhihu.com/p/25110450
 <hr>
 
@@ -77,6 +77,10 @@
 ### 參考文章 https://blog.csdn.net/bryant_meng/article/details/81024890
 ### 本範例僅採用多層類神經網路(MultiLayer Neural Networks)來建構GAN
 ### 程式:<a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/Keras-MLP-GAN-MNIST.py">Keras-MLP-GAN-MNIST.py </a>
+
+### [註] Batch Normalization 
+#### 參考: http://violin-tao.blogspot.com/2018/02/ml-batch-normalization.html
+
 
 # 範例(二) : keras 實現 GAN（生成對抗網路）
 ### 參考文章 https://www.itread01.com/content/1543548422.html
