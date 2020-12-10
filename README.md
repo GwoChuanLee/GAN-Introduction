@@ -69,6 +69,10 @@
     </p>
 </p>
 
+# 激活函數 (Activation function)
+### 參考: https://zhuanlan.zhihu.com/p/25110450
+<hr>
+
 # 範例(一) : 【Keras-MLP-GAN】MNIST: 以MLP方式建立GAN
 ### 參考文章 https://blog.csdn.net/bryant_meng/article/details/81024890
 ### 本範例僅採用多層類神經網路(MultiLayer Neural Networks)來建構GAN
