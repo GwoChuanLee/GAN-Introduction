@@ -109,7 +109,7 @@ discriminator = Model(img, validity) # input: img, output: 0 或 1
 #训练 generator，联合 discriminator 和 generator，
 #但是 discriminator 的梯度不更新，所以 discriminator 固定住了
 
-optimizer = Adam(0.0002, 0.5)
+optimizer = Adam(0.0002, 0.5) # learning rate=0.0002 
 
 # discriminator
 discriminator.compile(loss='binary_crossentropy',
