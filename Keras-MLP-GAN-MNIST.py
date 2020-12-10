@@ -53,7 +53,7 @@ model.summary()
 noise = Input(shape=(100,)) # input 100,这里写成100不加逗号不行哟
 img = model(noise) # output (28,28,1)
         
-generator = Model(noise, img)
+generator = Model(noise, img) # input:noise , output: img
 
 #
 # 2.3 搭建 discriminator
