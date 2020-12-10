@@ -1,6 +1,8 @@
 # (深耕計畫) 短期實務集訓課程 : 資工系, 教學發展中心
 # 講題: 生成對抗網路之專題實作開發 [2020/12/11]
 
+###### tags: `教學`
+
 
 # Deep Learning 背景知識 : 
 ### Keras深度學習(Deep Learning)卷積神經網路(CNN)辨識Cifar-10影像 [林大貴, 博碩書局]
@@ -49,7 +51,7 @@
 
 #### 資料參考:  https://www.leiphone.com/news/201703/Y5vnDSV9uIJIQzQm.html
 
-### DCGAN 生成器的作用是合成假的圖像，其基本結構如下圖。圖中，使用了卷積的倒數，即轉置卷積（transposed convolution），從 100 維的躁聲（滿足 -1 至 1 之間的均匀分布）中生成了假圖像。如在 DCGAN 模型中提到的那樣，去掉微步進卷積，這裡採用模型前三層之間的上採樣来合成更逼真的手寫圖像。在層與層之間，我們採用了批量正規化的方法來平穩化訓練過程。以 ReLU 函數為每層結構之後的激活函數。最後一層 Sigmoid 函數輸出最後的假圖像。第一層設置了 0.3-0.5 之間的 dropout 值來防止過擬合。
+### DCGAN 生成器的作用是合成假的圖像，其基本結構如下圖。圖中，使用了卷積的倒數(即反方向卷積)，即轉置卷積（transposed convolution），從 100 維的躁聲（滿足 -1 至 1 之間的均匀分布）中生成了假圖像。如在 DCGAN 模型中提到的那樣，去掉微步進卷積，這裡採用模型前三層之間的上採樣来合成更逼真的手寫圖像。在層與層之間，我們採用了批量正規化的方法來平穩化訓練過程。以 ReLU 函數為每層結構之後的激活函數。最後一層 Sigmoid 函數輸出最後的假圖像。第一層設置了 0.3-0.5 之間的 dropout 值來防止過擬合。
 
 <p align="center">
     <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/DCGAN-G-Net.jpg" alt="Sample"  width="800" height="300">
