@@ -76,25 +76,28 @@
 ### 參考: https://zhuanlan.zhihu.com/p/25110450
 <hr>
 
-# 範例(一) : 【Keras-MLP-GAN】MNIST: 以MLP方式建立GAN
+# 範例(一) : 以MLP方式建立 GAN
 
 ## 下面兩範例均採用多層類神經網路(MultiLayer Neural Networks)來建構簡易的 GAN 
 
-### 參考文章 https://blog.csdn.net/bryant_meng/article/details/81024890
+
+### 參考文章 (1): 【Keras-MLP-GAN】MNIST
+### 網址: https://blog.csdn.net/bryant_meng/article/details/81024890
 ### 程式:<a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/Keras-MLP-GAN-MNIST.py">Keras-MLP-GAN-MNIST.py </a>
 
-### 參考文章: 让我们跑一个最简单的GAN网络吧！ 
+
+
+### 參考文章 (2): 让我们跑一个最简单的GAN网络吧！ 
 ### 網址 : https://zhuanlan.zhihu.com/p/85908702
 ### 程式:<a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/Keras-MLP-GAN-MNIST.py">Keras-MLP-GAN-MNIST2.py </a>
-### 該程式碼比較完整, 生成效果較好, 約 400次 epochs 可看到成效
+### 文章2 程式碼比較完整, 生成效果較好, 約 400次 epochs 可看到成效
 
 ### 以上代碼可上傳系上 Jupyter HUB 執行
-
-<hr>
 
 ### [註] Batch Normalization 
 #### 參考: http://violin-tao.blogspot.com/2018/02/ml-batch-normalization.html
 
+<hr>
 
 # 範例(二) : keras 實現 GAN（生成對抗網路）
 ### 參考文章 https://www.itread01.com/content/1543548422.html
