@@ -90,9 +90,9 @@
 ### 參考文章 (2): 让我们跑一个最简单的GAN网络吧！ 
 ### 網址 : https://zhuanlan.zhihu.com/p/85908702
 ### 程式:<a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/Keras-MLP-GAN-MNIST2.py">Keras-MLP-GAN-MNIST2.py </a>
-### 文章2 程式碼比較完整, 生成效果較好, 約 400次迭代可看到成效
+### 自行比較兩程式，文章(2)的程式碼比較完整，生成效果較好，約 400次迭代可看到成效
 
-### 以上代碼可上傳系上 Jupyter HUB 執行
+### 以上代碼可上傳系上 Jupyter HUB 執行，執行結果如下:
 
 <p align="center">
     <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/MNIST.jpg" alt="Sample"  width="400" height="300">
