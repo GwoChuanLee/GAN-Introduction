@@ -34,7 +34,7 @@ X_train, y_train = load_data()
 print(X_train.shape, y_train.shape)
 
 # 实现最原始的GAN网络，因此用最简单MLP全连接层来构建生成器
-#
+# 
 
 def build_generator():
     model = Sequential()
@@ -121,36 +121,45 @@ def train_GAN(epochs=1, batch_size=128):
   X_train, y_train = load_data()
 
   # Creating GAN
+  # 建立一个GAN网络，GAN由两个神经网络（generator, discriminator）连接而成。
   generator= build_generator()
   discriminator= build_discriminator()
   GAN = build_GAN(discriminator, generator)
 
+  # 建立一个循环（400次迭代）。tqdm用来动态显示每次迭代的进度。
   for i in range(1, epochs+1):
     print("Epoch %d" %i)
     
     for _ in tqdm(range(batch_size)):
       # Generate fake images from random noiset
+      # 接着，我们生成呈高斯分布的噪声，利用generator，来生成batch_size（128张）图片。每张图片的输入就是一个1*100的噪声矩阵。
       noise= np.random.normal(0,1, (batch_size, 100))
       fake_images = generator.predict(noise)
 
       # Select a random batch of real images from MNIST
+      # 我们从Mnist数据集中随机挑选128张真实图片。我们给真实图片标注1，给假图片标注0，然后将256张真假图片混合在一起。
       real_images = X_train[np.random.randint(0, X_train.shape[0], batch_size)]
 
       # Labels for fake and real images           
-      label_fake = np.zeros(batch_size)
-      label_real = np.ones(batch_size) 
+      label_fake = np.zeros(batch_size)  # 假圖標 0
+      label_real = np.ones(batch_size)   # 真圖標 1
 	  
-	  # Concatenate fake and real images 
+      # Concatenate fake and real images 
       X = np.concatenate([fake_images, real_images])
       y = np.concatenate([label_fake, label_real])
 
       # Train the discriminator
+      # 我们利用上文提到的256张带标签的真假图片，训练discriminator。训练完毕后，discriminator的weights得到了更新。
+      # （打个比方，警察通过研究市面上流通的假币，在一起开会讨论，努力研发出了新一代鉴定假钞的方法）。
       discriminator.trainable=True
-      discriminator.train_on_batch(X, y)
+      discriminator.train_on_batch(X, y)  # 開始訓練 Discriminator , 資料集在 X 訓練目標為 fake_images --> label_fake, real_images ---> lable_real
 
       # Train the generator/chained GAN model (with frozen weights in discriminator) 
+      # 然后，我们冻结住discriminator的weights，让discriminator不再变化。然后就开始训练generator (chained GAN)。
+      # 在GAN的训练中，我们输入一堆噪声，期待的输出是将假图片预测为真。在这个过程中，generator继续生成假图片，送到discriminator检验，得到检验结果，
+      # 如果被鉴定为假，就不断更新自己的权重（假钞贩子不断改良造假技术），直到discriminator将加图片鉴定为真图片（直到当前鉴定假钞的技术无法识别出假钞）。
       discriminator.trainable=False
-      GAN.train_on_batch(noise, label_real)
+      GAN.train_on_batch(noise, label_real)  # 開始訓練 Generator , 資料集在 noise 目標為訓練成 real image
 
     # Draw generated images every 15 epoches     
     if i == 1 or i % 10 == 0:
