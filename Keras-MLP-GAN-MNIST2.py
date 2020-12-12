@@ -167,6 +167,12 @@ def train_GAN(epochs=1, batch_size=128):
 train_GAN(epochs=400, batch_size=128)
 
 
+# 现在，我们总结一下每次迭代发生了什么：
+
+# 1. Generator利用自己最新的权重，生成了一堆假图片。
+# 2. Discrminator根据真假图片的真实label，不断训练更新自己的权重，直到可以顺利鉴别真假图片。
+# 3. 此时discriminator权重被固定，不再发生变化。generator利用最新的discrimintor，苦苦思索，不断训练自己的权重，最终使discriminator将假图片鉴定为真图片。
+
 
 
 
