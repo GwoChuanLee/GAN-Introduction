@@ -90,9 +90,18 @@
 ### 參考文章 (2): 让我们跑一个最简单的GAN网络吧！ 
 ### 網址 : https://zhuanlan.zhihu.com/p/85908702
 ### 程式:<a href="https://github.com/GwoChuanLee/GAN-Introduction/blob/master/Keras-MLP-GAN-MNIST2.py">Keras-MLP-GAN-MNIST2.py </a>
-### 文章2 程式碼比較完整, 生成效果較好, 約 400次 epochs 可看到成效
+### 文章2 程式碼比較完整, 生成效果較好, 約 400次迭代可看到成效
 
 ### 以上代碼可上傳系上 Jupyter HUB 執行
+
+<p align="center">
+    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/MNIST.png" alt="Sample"  width="400" height="300">
+    <p align="center">
+        <b> 400次迭代生成的手寫數字圖形</b>
+    </p>
+</p>
+
+
 
 ### [註] Batch Normalization 
 #### 參考: http://violin-tao.blogspot.com/2018/02/ml-batch-normalization.html
