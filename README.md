@@ -95,7 +95,7 @@
 ### 以上代碼可上傳系上 Jupyter HUB 執行
 
 <p align="center">
-    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/MNIST.png" alt="Sample"  width="400" height="300">
+    <img src="https://github.com/GwoChuanLee/GAN-Introduction/blob/main/MNIST.jpg" alt="Sample"  width="400" height="300">
     <p align="center">
         <b> 400次迭代生成的手寫數字圖形</b>
     </p>
